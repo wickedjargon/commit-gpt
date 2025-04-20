@@ -47,17 +47,9 @@ The script comes with default instructions to generate commit messages. These ar
 
 To override the default instructions, create a file at `~/.commit_message_instructions` and write your custom instructions in it. The script will automatically load these instructions if the file exists.
 
-## Usage
+## Usage 
 
-Run the script by specifying the commit message file:
-
-```bash
-./commit_message_generator.py path/to/commit_message.txt
-```
-
-This will generate a commit message and save it to `path/to/commit_message.txt`.
-
-Ensure you have staged changes before running the script, as it relies on `git diff --staged` to create the commit message.
+For each version controlled project, copy `prepare-commit-msg` to the `.git/hooks/` directory.
 
 ## License
 
